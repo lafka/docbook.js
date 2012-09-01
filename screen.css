@@ -1,0 +1,9 @@
+nav > ul { list-style: none; }
+nav > ul > li {display:inline;}
+
+body > header h1 {font-size:1.3em;}
+body > header { background: #FAFAFA; border-bottom: 1px solid #EEE; }
+body > header h1 a { text-decoration:none; color: #555; }
+body > header h1 a:hover {color:#333;} 
+
+body footer nav a {text-transform: lowercase;}
