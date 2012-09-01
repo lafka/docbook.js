@@ -19,17 +19,18 @@
 					<hgroup class="page-header">
 						<h1 id="page-title">This is broken......</h1>
 					</hgroup>
-					
+
 					<article class="content" id="page-content">
 						<p>
 						Sorry, this should not be here. Seems you either don't
 						have javascript or it's broken.....
 						</p>
 					</article>
-					
+
 				</section>
 				<script type="text/javascript">
-					book = docbook("docbook", "docbook-content");
+					var book = new docbook.controller("docbook-content");
+					book.route("docbook/", document.location.hash.replace(/^#/, ""));
 				</script>
 			</div>
 		</div>
