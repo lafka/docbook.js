@@ -7,3 +7,7 @@ body > header h1 a { text-decoration:none; color: #555; }
 body > header h1 a:hover {color:#333;} 
 
 body footer nav a {text-transform: lowercase;}
+
+#page-content h1 { font-size: 1.7em; }
+#page-content h2 { font-size: 1.4em; }
+#page-content h3 { font-size: 1.1em; }

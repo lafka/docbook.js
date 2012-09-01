@@ -4,8 +4,15 @@
 		<title>lafa</title>
 		<link rel="stylesheet" href="bootstrap.css" />
 		<link rel="stylesheet" href="screen.css" />
+		<link rel="stylesheet" href="http://yandex.st/highlightjs/7.2/styles/default.min.css">
 
 		<script type="text/javascript" src="docbook.js"></script>
+		<script src="highlight.min.js"></script>
+		<script type="text/javascript" src="Markdown.Converter.js"></script>
+		<script type="text/javascript" src="Markdown.Sanitizer.js"></script>
+		<script type="application/javascript">
+			hljs.initHighlightingOnLoad();
+		</script> 
 	</head>
 	<body>
 		<header>
@@ -19,17 +26,23 @@
 					<hgroup class="page-header">
 						<h1 id="page-title">This is broken......</h1>
 					</hgroup>
-					
+
 					<article class="content" id="page-content">
 						<p>
 						Sorry, this should not be here. Seems you either don't
 						have javascript or it's broken.....
 						</p>
 					</article>
-					
+
 				</section>
 				<script type="text/javascript">
-					book = docbook("docbook", "docbook-content");
+					var opts = {
+						debug       : true,
+						path_prefix : document.location.pathname,
+						repository  : "docbook/", 
+						};
+					var book = new docbook.controller("docbook-content", opts);
+					book.route("");
 				</script>
 			</div>
 		</div>
